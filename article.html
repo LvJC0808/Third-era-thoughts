@@ -279,6 +279,44 @@
             }
         }
 
+        /* Closing Statement */
+        .closing-statement {
+            margin: 80px 0 60px;
+            padding: 60px 50px;
+            background: linear-gradient(135deg, var(--cream) 0%, #F5EFE6 100%);
+            border-radius: 2px;
+            border: 2px solid var(--accent);
+            position: relative;
+        }
+
+        .closing-statement::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(135deg, var(--accent), var(--accent-light));
+            border-radius: 2px;
+            z-index: -1;
+            opacity: 0.1;
+        }
+
+        .closing-statement p {
+            font-family: 'Noto Serif SC', serif;
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 1.8;
+            color: var(--ink);
+            text-align: center;
+            margin: 0;
+        }
+
+        .closing-highlight {
+            color: var(--accent);
+            font-weight: 700;
+        }
+
         /* Scroll Progress Bar */
         .progress-bar {
             position: fixed;
@@ -316,6 +354,15 @@
                 font-size: 80px;
                 left: 10px;
                 top: -10px;
+            }
+
+            .closing-statement {
+                padding: 40px 30px;
+                margin: 60px 0 40px;
+            }
+
+            .closing-statement p {
+                font-size: 20px;
             }
 
         }
@@ -432,8 +479,11 @@
 
             <p>写了这么多，我想说的已经差不多到这里了，作为一个站在第三时代的大门口，懵懵懂懂的一个年轻人类，我希望的是：终有一天，我们能够将黑箱变为可解释的透明箱，从担心黑箱里弹出小丑玩偶的赌徒，变成新开发范式下的工程师。也许未来的程序员不再以亲手敲下每一行代码定义自己，而是以提出问题、设计系统、判断结果并承担责任来定义自己。</p>
 
-            <div class="pullquote">
-                人类不会被取代，也不会消失，从钻木取火开始，我们就学会利用工具，让文明进步。
+            <div class="closing-statement">
+                <p>
+                    <span class="closing-highlight">人类不会被取代，也不会消失。</span><br>
+                    从钻木取火开始，我们就学会利用工具，让文明进步。
+                </p>
             </div>
         </article>
     </div>
